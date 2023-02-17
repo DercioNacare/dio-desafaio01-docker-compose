@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  apache:
+    container_name: dncode
+    image: httpd:latest
+    ports:
+      - 80:80
+    volumes:
+      - /data/dncode-webiste:/usr/local/apache2/htdocs
